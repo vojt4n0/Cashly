@@ -1,0 +1,168 @@
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 380px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: modalIn 0.25s ease-out;
+  position: relative;
+}
+
+@keyframes modalIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 14px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+#registerForm button {
+  display: block;
+  margin: 20px auto 0;
+}
+#loginForm button {
+  display: block;
+  margin: 20px auto 0;
+}
+#transactionModal button {
+  display: block;
+  margin: 20px auto 0;
+}
+#changePasswordModal button {
+  display: block;
+  margin: 20px auto 0;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.profile-content {
+  text-align: center;
+}
+
+.profile-avatar-large {
+  width: 80px;
+  height: 80px;
+  background: #fff6ed;
+  color: #ff8d1a;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px auto;
+
+  font-size: 2rem;
+}
+
+.profile-name {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.profile-email {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.profile-details-box {
+  text-align: left;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #eee;
+}
+
+.profile-details-box p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-details-box p:last-child {
+  margin-bottom: 0;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}

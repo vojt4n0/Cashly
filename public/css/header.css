@@ -1,0 +1,30 @@
+header {
+  background: linear-gradient(135deg, #ffffff, #ffe0c1);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #ff8d1a;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #fcad5f;
+}
