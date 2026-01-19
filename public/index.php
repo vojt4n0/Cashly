@@ -36,7 +36,7 @@
                 <div class="features-grid">
                     <div class="feature-item">
                         <h3>Sledování transakcí</h3>
-                        <p>Přidávejte, tříděte a vyhodnocujte všechny své výdaje i příjmy.</p>
+                        <p>Přidávejte, třiďte a vyhodnocujte všechny své výdaje i příjmy.</p>
                     </div>
                     <div class="feature-item">
                         <h3>Analýza výdajů</h3>
